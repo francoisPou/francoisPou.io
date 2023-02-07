@@ -113,7 +113,7 @@ function estAfficher(element) {
  * @returns {boolean} true si l'élément est caché, false sinon
  */
 function estCacher(element) {
-    return element.style.display == "none";
+    return element.style.display === "none";
 }
 
 
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {  // Attente que le DO
         var BtnEnSavoirPlusDevBackEnd = document.getElementById('savoirPlusDevBackEnd')
         
         BtnEnSavoirPlusDevBackEnd.addEventListener('click', function(e) {
-            RedirectionJavascript("devBackEnd.html")
+            RedirectionJavascript("src/devBackEnd.html")
         });
     }
 
@@ -214,14 +214,14 @@ document.addEventListener('DOMContentLoaded', function() {  // Attente que le DO
 
         function btnFormationAEteClique() {
             e++
-            if (10 == e) {
+            if (10 === e) {
                 toggleSpin(BtnSecteurActivite.firstElementChild)
                 toggleSpin(BtnFormation.firstElementChild)
                 toggleSpin(BtnOuExercer.firstElementChild)
                 toggleSpin(BtnCompetence.firstElementChild)
                 toggleSpin(BtnSalaires.firstElementChild)
                 toggleSpin(BtnEvolutionPro.firstElementChild)
-            } else if (e == 12) {
+            } else if (e === 12) {
                 toggleSpin(BtnSecteurActivite.firstElementChild)
                 toggleSpin(BtnFormation.firstElementChild)
                 toggleSpin(BtnOuExercer.firstElementChild)
